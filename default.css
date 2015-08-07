@@ -1,0 +1,49 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Glegoo', serif;
+	color: navy;
+}
+.column1 {
+	float: left;
+	width: 30%;
+	height: 100%;
+	background-color: white; 
+}
+
+.column2 {
+	float: right;
+	width: 70%;
+	height: 100%;
+	background-color: none;
+}
+
+h3 {
+	text-align: center;
+	position: inherit;
+	font-size: 30px;
+}
+
+img {
+	width: 10em;
+	height: 10em;
+	margin: 0 auto;
+	display: block;
+
+}
+
+p {
+	text-align: center;
+}
+
+
+#about {
+	background-color: #93c9e8;
+}
+#blog {
+	background-color: #D3FAFF;
+	}
+#portfolio {
+	background-color: #B0D6DF;
+}
+
