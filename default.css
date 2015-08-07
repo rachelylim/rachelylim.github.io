@@ -42,7 +42,11 @@ p {
 }
 #blog {
 	background-color: #D3FAFF;
+}
+	h4 {
+		text-align: center;
 	}
+	
 #portfolio {
 	background-color: #B0D6DF;
 }
