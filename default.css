@@ -54,6 +54,16 @@ p {
 	h4 {
 		text-align: center;
 	}
+
+	.content {
+		padding: 10px 45px 3px 45px;
+		text-align: justify;
+	}
+
+	.content-images {
+		width: 600px;
+		height: 400px;
+	}
 	
 #portfolio {
 	background-color: #B0D6DF;
