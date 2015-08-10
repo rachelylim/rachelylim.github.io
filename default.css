@@ -12,6 +12,10 @@ html, body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+a {
+	text-decoration: none;
+}
 .column1 {
 	float: left;
 	width: 30%;
