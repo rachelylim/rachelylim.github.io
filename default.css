@@ -62,7 +62,9 @@ p {
 		height: 600px;
 		overflow: scroll;
 	}
-
+	section a {
+		text-decoration: blink;
+	}
 	#blog h4 {
 		text-align: center;
 	}
