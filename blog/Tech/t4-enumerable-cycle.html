@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Rachel Y Lim</title>
+      <link rel="stylesheet" type="text/css" href="../../default.css">
+      <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   
+  </head>
+  
+  <body>
+
+    <div class="column1">
+      
+        <h3><a href="../../index.html">Rachel Yisle Lim</a></h3>
+      
+        <img src="../../imgs/rachel.png"/>
+        
+        <p>Email me</p>
+          
+        <p><a href="">GitHub</a></p>
+        
+        <p><a href="">LinkedIn</a></p>
+        
+        <p><a href="">Twitter</a></p>
+        
+        <p><a href="">
+        Instagram</a></p>
+
+    </div>
+
+    
+    <div class="column2">
+    
+      <div id="about">About Me</div>
+      <div id="blog"><a href="../../blog-index.html">Blog</a>
+        <section>
+        <h4>Ruby Methods: Enumerable#cycle(n=nil)</h4>
+        <h4>August 23, 2015</h4>
+
+          <p class="content">
+            I've been learning how to use Ruby to solve puzzles/challenges, like alphabetizing words, sorting numbers, grouping names etc. However, I'm curious how Ruby is used for the real world, to solve real situations. I found myself thinking about this while learning how to use the Enumerable#cycle(n=nil) method. If you ever wanted a short to creating loops, or easily controlling a loop to a specified number of times, this method is for you!
+          </p>
+          <p class="content">
+            Basically, the cycle method runs a block given. If you specify 'n' as an argument for cycle, it will run the cycle 'n' times; if not argument is specified, then the cycle will run infinitely (not sure when you would ever want to do that). So, for example: 
+          </p>
+          <code>
+            pay = [4.50, 5.50, 6.0, 7.75]
+            <br />
+            pay.cycle(2) {|x| puts x } # => prints 4.50, 5.50, 6.0, 7.75, 4.50, 5.50, 6.0, 7.75 
+            <br />
+            pay.cycle {|x| puts x} # => prints the pay array FOREVER
+          </code>
+          <p
+          <p class="content">
+            What are some situations you would use this method? In the example I shared above, I could see it being useful for when you have a certain cycle, such as a pay cycle, that must repeat 'x' number of times per year. Or perhaps for a research survey that must print questions for 'x' number of study participants. Or in the world of design, you might need to write a program to tell a machine to repeat a pattern a certain number of times. What are some situations you can think of? (Once I set up a comment box, I'd love to hear your thoughts...)
+          </p>
+        </section>
+      </div>
+
+      <div id="portfolio">Portfolio</div>
+
+    </div>
+
+  </body>
+</html>
+
