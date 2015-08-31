@@ -25,11 +25,12 @@ a {
 }
 
 .fa {
-	font-size: 25px;
-	width: 30px;
-	height: 30px;
+	font-size: 50px;
+	width: 50px;
+	height: 50px;
 	margin-top: 10px;
 	text-align: center;
+	color: #B0D6DF;
 }
 
 .column2 {
@@ -60,7 +61,17 @@ p {
 
 #about {
 	background-color: #93c9e8;
+	width: 100%;
+	height: auto;
+	overflow: scroll;
+	text-align: justify;
 }
+
+#about .content {
+	padding: 10px 45px 3px 45px;
+	text-align: justify;
+}
+
 #blog {
 	background-color: #D3FAFF;
 }
@@ -82,6 +93,10 @@ p {
 		text-align: justify;
 	}
 
+	#blog ol {
+		padding: 10px 45px 3px 75px;
+		text-align: justify;
+	}
 	#blog .content-images {
 		width: 500px;
 		height: 300px;
@@ -89,13 +104,24 @@ p {
 		display: block;
 	}
 
-	#blog code {
+	#blog .code-block {
 		display: block;
 		background-color: white;
 		margin: auto;
-		width: 500px;
+		width: 450px;
 		height: auto;
 		overflow: scroll;
+		white-space: pre;
+		font-family: monospace;
+		font-size: 15px;
+	}
+
+	#blog code {
+		display: inline-block;
+		background-color: white;
+		white-space: pre;
+		font-family: monospace;
+		font-size: 15px;
 	}
 
 	
