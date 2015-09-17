@@ -49,46 +49,46 @@
           <p class="content">
             The puppy Class below includes basic "actions" that puppies tend to do--bark, poop, sleep, eat, and gain weight/grow. You can take a second to scroll through the code below.
           </p>
-          <div class="code-block">
-            class Puppy
-              def initialize(name, weight)
-                @name = name
-                @weight = weight
-              end
+<div class="code-block">
+  class Puppy
+    def initialize(name, weight)
+      @name = name
+      @weight = weight
+    end
 
-              def bark
-                puts "Bark!"
-              end
+    def bark
+      puts "Bark!"
+    end
 
-              def poop
-                puts "big poop."
-              end
+    def poop
+      puts "big poop."
+    end
 
-              def sleep
-                  puts "Zzzzzzzz......"
-                  puts "(Shhh...#{@name} is sleeping...)"
-                end
-              end
+    def sleep
+        puts "Zzzzzzzz......"
+        puts "(Shhh...#{@name} is sleeping...)"
+      end
+    end
 
-              def eat
-                puts "(#{@name} is hungry! Will you feed #{@name}? Type 'yes' or 'no'.)"
-                food = gets.chomp
-                if food == "yes"
-                  puts "nom nom nom!"
-                  puts weighs?
-                else
-                  puts bark
-                  puts "(Poor #{@name}...)"
-                end
-              end
+    def eat
+      puts "(#{@name} is hungry! Will you feed #{@name}? Type 'yes' or 'no'.)"
+      food = gets.chomp
+      if food == "yes"
+        puts "nom nom nom!"
+        puts weighs?
+      else
+        puts bark
+        puts "(Poor #{@name}...)"
+      end
+    end
 
-              def weighs?
-                puts "(#{@name} was #{@weight} lbs."
-                @weight += 5
-                puts "#{@name} now weighs #{@weight} lbs!)"
-              end
-            end
-          </div>
+    def weighs?
+      puts "(#{@name} was #{@weight} lbs."
+      @weight += 5
+      puts "#{@name} now weighs #{@weight} lbs!)"
+    end
+  end
+</div>
           <p class="content">
             After defining the class Puppy, the very first method I created inside the class is the <code>initialize</code> method. This method is often used in classes to create variables that are unique to a given situation--also known as an 'instance variable'. In this example, you see that the initialize method takes two arguments--a name and weight, each unique to the puppy you reference.
           </p>

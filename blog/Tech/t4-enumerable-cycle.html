@@ -44,13 +44,13 @@
           <p class="content">
             Basically, the cycle method runs a block given. If you specify 'n' as an argument for cycle, it will run the cycle 'n' times; if no argument is specified, then the cycle will run infinitely (not sure when you would ever want to do that). So, for example: 
           </p>
-          <code>
-            pay = [4.50, 5.50, 6.0, 7.75]
-            <br />
-            pay.cycle(2) {|x| puts x } # => prints 4.50, 5.50, 6.0, 7.75, 4.50, 5.50, 6.0, 7.75 
-            <br />
-            pay.cycle {|x| puts x} # => prints the pay array FOREVER
-          </code>
+<div class="code-block">
+  pay = [4.50, 5.50, 6.0, 7.75]
+  
+  pay.cycle(2) {|x| puts x } # => prints 4.50, 5.50, 6.0, 7.75, 4.50, 5.50, 6.0, 7.75 
+  
+  pay.cycle {|x| puts x} # => prints the pay array FOREVER
+</div>
           <p
           <p class="content">
             What are some situations you would use this method? In the example I shared above, I could see it being useful for when you have a pay cycle, that must repeat 'x' number of times per year. Or perhaps for a research survey that must print questions for 'x' number of study participants. Or in the world of design, you might need to write a program to tell a machine to repeat a pattern a certain number of times. What are some situations you can think of? (Once I set up a comment box, I'd love to hear your thoughts...)
