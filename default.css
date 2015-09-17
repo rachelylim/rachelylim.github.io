@@ -85,8 +85,9 @@ p {
 		overflow: scroll;
 		margin: 0
 	}
-	section a {
+	section p a {
 		text-decoration: blink;
+		font-style: italic;
 	}
 	#blog h4 {
 		text-align: center;

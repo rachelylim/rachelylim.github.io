@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Rachel Y Lim</title>
+      <link rel="stylesheet" type="text/css" href="../../default.css">
+      <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   
+  </head>
+  
+  <body>
+
+    <div class="column1">
+      
+        <h3><a href="../../index.html">Rachel Yisle Lim</a></h3>
+      
+        <img src="../../imgs/rachel.png"/>
+      
+        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=rachel.y.lim@mail.com" target="_blank"><i class="fa fa-envelope fa-3x"></i></a></p>
+          
+        <p><a href="https://github.com/rachelylim" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></p>
+        
+        <p><a href="https://www.linkedin.com/in/rachelylim" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></p>
+        
+        <p><a href="https://twitter.com/rachelylim" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a></p>
+        
+        <p><a href="https://instagram.com/rachelylim/" target="_blank">
+        <i class="fa fa-instagram fa-3x"></i></a></p>
+
+    </div>
+
+    
+    <div class="column2">
+    
+      <div id="about">About Me</div>
+      <div id="blog"><a href="../../blog-index.html">Blog</a>
+        <section>
+        <h4>On Big-O Complexities</h4>
+        <h4>September 17, 2015</h4>
+
+          <p class="content">
+            DISCLAIMER: I am attempting to explain a concept that I don't perfectly understand yet. I am summarizing what I've read as simply as I can. Also, I found <a href="">this site</a> and <a href="">this video</a> to be very helpful and many of my examples are pulled from these gurus.
+          </p>
+          <p class="content">
+            I asked a friend who recently accepted a job offer as a developer what kind of non-code language concepts I should try to master. Big O Complexities came up. Take a look at <a href="http://bigocheatsheet.com/">this</a> chart and you'll see a bunch of jibberish, each of which represent different types of Big O Complexities--they are used to classify algorithms according to HOW they respond to CHANGES in INPUT SIZE. How do you think different functions in code behave, depending on the size of the input or data? You guessed it: the time it takes to run the code--time increases as data size increases.
+          </p>
+          <p class="content">
+            I like to learn with examples and diagrams, so I'll try my best here to explain three of the most basic examples (in Ruby) of Big O Notation.  
+          </p>
+          <p class="content">
+            <i>O(1) aka Constant Time</i>: Below is an example of a function/method running in constant time. It's constant because it only does one thing--print "Hello" with the person's name. The input is one piece of information, and the method has one action.
+          </p>
+  <div class="code-block">
+    def greet(person)
+      p "Hello, #{person}"
+    end
+  </div>
+          <p class="content">
+            <i>O(n) aka Linear Time</i>: Below is an example of function/method running in linear time. In this notation, 'n' represents the size of the input. In this case, 'n' represents each <code>excuse</code> in the <code>list_of_excuses</code>. So if I had, 10 excuses, then the method must run 10 times; if I had 1,000,000 excuses, then the method must run 1,000,000 times.
+          </p>
+  <div class="code-block">
+    def flake(list_of_excuses)
+      for excuse in list_of_excuses
+        p excuse
+      end
+    end
+  </div>
+          <p class="content">
+          <i>O(n^2) aka Quadratic Time</i>: Below is an example of a function/method running in quadratic time. It's a nested loop that is going to pair each excuse with another excuse so you can flake a second time! (assuming you don't care if you use the same excuse twice) So, if I have 10 excuses, this nested loop runs 100 times. 
+          </p>
+  <div class="code-block">
+    def possible_excuse_pairs(list_of_excuses)
+      for first_excuse in list_of_excuses
+        for second_excuse in list_of_excuses
+          p first_excuse, second_excuse
+        end
+      end
+    end
+  </div>
+        <p class="content">
+          Here's the important part. If one of those methods above had a fancy function, such as 100n^3 + 25n^2 + 37n + 12, the constants and variables smaller than n^3 are negligible once you use a gigantically silly input size. n^3 is the main part of the function that defines the behavior or length of time that the code runs. So 100n^3 + 25n^2 + 37n + 12 simply becomes O(n^3) in Big O Notation. It's been a while since I took calculus...but I do have a faint memory about dropping less significant terms. Which is what Big O Notation helps us do.
+        </p>
+        <p class="content">
+          Obviously, there are many more complex behaviors and algorithms, but I don't know enough to explain these to you yet. In the meantime, the biggest takeaway I got from researching about Big O Complexities and Notation is that it's a helpful way to predict how code works when you read it, and to plan your code in order to optimize time and memory. 
+        </p>
+
+        </section>
+      </div>
+
+      <div id="portfolio"><a href="../../projects/index.html">Portfolio</a></div>
+      <div id="resume"><a href="../../resume.html">Resume</a></div>
+
+    </div>
+
+  </body>
+</html>
+
