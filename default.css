@@ -77,7 +77,7 @@ p {
 #blog {
 	background-color: #D3FAFF;
 }
-	section {
+	#blog section {
 		background-color: #D3FAFF;
 		width: 100%;
 		height: 600px;
@@ -143,6 +143,9 @@ p {
 	background-color: #99D6EA;
 	/*padding-bottom: 20px;*/
 }
+	#porfolio section {
+		background-color: #99D6EA; 
+	}
 	#portfolio h4 {
 		text-align: center;
 		font-size: 20px;
